@@ -1,129 +1,172 @@
-html {
-    scroll-behavior: smooth;
-}
-
 * {
-    margin: 0;
+    margin:  0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: #E5E5E5;   
     font-family: 'Open Sans', sans-serif;
+    background: #000 url(imagenes/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .contenedor {
-    width: 1000px;
-    margin: 20px auto;
-    overflow: hidden;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #fff;
+    font-size: 25px;
+
 }
 
 header {
-    background: #ffffff;
-}
-
-header nav {
     width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul {
-    width: 100%;
-    overflow: hidden;
-    list-style: none;
-}
-
-header nav ul li {
-    float: left;
-}
-
-header nav ul li a {
+header .menu a {
     text-decoration: none;
-    color: #2A9D8F;
-    display: inline-block;
-    padding: 15px 20px;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 40px;
 }
 
-header nav ul li a:hover {
-    background: #000000;
+header .menu a:hover {
     transition: all 1s ease;
+    border-bottom: 1px solid #fff;
 }
 
 .main {
-    width: 700px;
-    background: #ffffff;
-    color: #000000;
-    float: left;
-}
-
-.main .imagen {
-    width: 100%;
-}
-
-.main .imagen img {
-    width: 100%;
-    vertical-align: top;
-}
-
-.main .posts {
-    padding: 40px;
-}
-
-.main .posts article {
+    background: #fff;
     padding: 20px;
+    width: 70%;
 }
 
-.main .posts article p {
-    margin: 15px;
+.main article .thumb {
+    margin-bottom: 20px;
+}
+
+.main article .thumb img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.main article h2 {
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.main article p {
+    font-size: 14px;
+    margin-bottom: 20px;
     line-height: 27px;
 }
 
 aside {
-    width: 300px;
-    float: left;
-    background: #161f26;
+    width: 30%;
+    background: #537dca;
     padding: 20px;
-    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
 }
 
-aside .widget {
-    margin-bottom: 20px;
-}
-
-aside .widget .titulo {
-    color: #2A9D8F;
-    border-bottom: 1px solid #2A9D8F;
-    margin-bottom: 10px;
-}
-
-aside .widget ul {
-    list-style: none;
-}
-
-aside .widget ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
-    padding: 10px 0;
-}
-
-aside .widget ul li a {
-    text-decoration: none;
+aside .ad {
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0;
+    background: #4264a2;
+    margin: 20px 0;
     color: #fff;
-}
-
-aside .widget ul li a:hover {
-    color: #8f8f8f;
-    transition: all 1s ease;
-}
-
-aside .widget p {
-    line-height: 27px;
 }
 
 footer {
-    clear: both;
-    width: 70%;
-    background: #000000;
-    padding: 15px 0;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, .2);
+    padding: 20px;
+    width: 100%;
     color: #fff;
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+    opacity: .2;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+    aside .ad {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    header .menu {
+        width: 100%;
+        background: rgba(255,255,255, .2);
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .menu a {
+        margin: 0 20px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .autor {
+        order: 2;
+    }
+
+    footer .redes-sociales {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
 }
