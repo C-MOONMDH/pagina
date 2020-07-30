@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;   
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+header {
+    background: #ffffff;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #2A9D8F;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+header nav ul li a:hover {
+    background: #000000;
+    transition: all 1s ease;
+}
+
+.main {
+    width: 700px;
+    background: #ffffff;
+    color: #000000;
+    float: left;
+}
+
+.main .imagen {
+    width: 100%;
+}
+
+.main .imagen img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .posts {
+    padding: 40px;
+}
+
+.main .posts article {
+    padding: 20px;
+}
+
+.main .posts article p {
+    margin: 15px;
+    line-height: 27px;
+}
+
+aside {
+    width: 300px;
+    float: left;
+    background: #161f26;
+    padding: 20px;
+    color: #ffffff;
+}
+
+aside .widget {
+    margin-bottom: 20px;
+}
+
+aside .widget .titulo {
+    color: #2A9D8F;
+    border-bottom: 1px solid #2A9D8F;
+    margin-bottom: 10px;
+}
+
+aside .widget ul {
+    list-style: none;
+}
+
+aside .widget ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 10px 0;
+}
+
+aside .widget ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside .widget ul li a:hover {
+    color: #8f8f8f;
+    transition: all 1s ease;
+}
+
+aside .widget p {
+    line-height: 27px;
+}
+
+footer {
+    clear: both;
+    width: 70%;
+    background: #000000;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+}
