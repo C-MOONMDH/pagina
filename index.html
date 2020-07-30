@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio de prueba</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Layout con flexbox</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="contenedor">
         <header>
-            <nav>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Acerca de</a></li>
-                    <li><a href="">Otra cosa aqui</a></li>
-                </ul>
+            <div class="logo">
+                <h2>Eduardo</h2>
+            </div>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
             </nav>
         </header>
-            <section class="main">
-                <div class="imagen">
-                    <img src="img6.jpg" alt="">
+        <section class="main">
+            <article>
+                <div class="thumb">
+                    <img src="imagenes/thumb.jpg" alt="">
                 </div>
-                <section class="posts">
-                    <article>
-                        <h2>Titulo del articulo</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit rerum enim saepe mollitia inventore, fugiat obcaecati minus laboriosam. Nemo minima cum unde excepturi voluptate doloremque fuga sequi quo vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusantium, eaque dolorum laborum quisquam quidem minima nihil, earum sed natus commodi nemo labore ullam deleniti ipsam iusto cupiditate. Tenetur, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero, amet deleniti repudiandae eligendi sequi asperiores dolor delectus sit sunt? Quidem, itaque hic. Excepturi expedita nulla atque architecto deleniti enim.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit rerum enim saepe mollitia inventore, fugiat obcaecati minus laboriosam. Nemo minima cum unde excepturi voluptate doloremque fuga sequi quo vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusantium, eaque dolorum laborum quisquam quidem minima nihil, earum sed natus commodi nemo labore ullam deleniti ipsam iusto cupiditate. Tenetur, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero, amet deleniti repudiandae eligendi sequi asperiores dolor delectus sit sunt? Quidem, itaque hic. Excepturi expedita nulla atque architecto deleniti enim.</p>
-                    </article>
-                </section>
-            </section>
-            <aside>
-                <div class="widget">
-                    <h3 class="titulo">Destacado</h3>
-                    <ul>
-                        <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-                        <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-                        <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-                    </ul>
-                </div>
-                <div class="widget">
-                    <h3 class="titulo">Informacion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit rerum enim saepe mollitia inventore, fugiat obcaecati minus laboriosam. Nemo minima cum unde excepturi voluptate doloremque fuga sequi quo vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusantium, eaque dolorum laborum quisquam quidem minima nihil, earum sed natus commodi nemo labore ullam deleniti ipsam iusto cupiditate. Tenetur, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero, amet deleniti repudiandae eligendi sequi asperiores dolor delectus sit sunt? Quidem, itaque hic. Excepturi expedita nulla atque architecto deleniti enim.</p>
-                </div>
-            </aside>
-            <footer>
-                <p>Eduardo</p>
-            </footer>
+                <h2>Titulo del articulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ut nostrum expedita, numquam excepturi officia magnam ratione unde enim, sed, amet nam alias labore. Voluptates fuga laborum non optio ullam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis tenetur mollitia sed omnis quaerat, ratione.</p>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ut nostrum expedita, numquam excepturi officia magnam ratione unde enim, sed, amet nam alias labore. Voluptates fuga laborum non optio ullam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis tenetur mollitia sed omnis quaerat, ratione.</p>
+            </article>
+        </section>
+        <aside>
+            <div class="ad">
+                <p>AD</p>
+            </div>
+            <div class="ad">
+                <p>AD</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="autor">
+                <p>Eduardo - 2020</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="">Facebook</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
