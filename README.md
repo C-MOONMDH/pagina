@@ -1,3 +1,3 @@
-# pagina
+# Prueba
 
-Esto es una pagina.
+en este repositorio subo los proyectos que realizo referente al diseno web
